@@ -80,6 +80,36 @@ body:after {
       background: #666666;
       color: #fff; }
 
+.cv_button{
+  margin: 0 auto;
+  width: 650px;
+  }@media (max-width: 1024px) {
+    .cv_button{
+      margin: 0 auto;
+      width: 250px;
+    }
+    @media (max-width: 425px) {
+      .p_cv_button{
+        margin-left: auto;
+        margin-right: auto;
+        width: 175px;
+      }
+    }
+}
+
+.cont_ul{
+  list-style: none; 
+  display: flex; 
+  justify-content: space-around; 
+  padding-inline-start: 0px;
+}@media (max-width: 425px) {
+    .cont_ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
 .line-height-1 {
   line-height: 1 !important; }
 
