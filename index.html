@@ -157,10 +157,25 @@
               <div class="service-about">
                 <h3>Bachelor Universitaire Technologique Informatique</h3>
                 <h6 style="color: #D3D3D3;">IUT A de Lille, 59653 Villeneuve-d'Ascq</h6> 
-                <p>En cette deuxième année de ma formation de BUT informatique, j'ai acquis les connaissances requises pour travailler avec les langages de programmation les plus en demande dans le milieu professionnel, comme le HTML, CSS, Java, SQL et Bash. 
-                  J'ai eu l'opportunité de mettre ces connaissances en pratique grâce aux projets de SAé, qui m'ont également permis de développer mes capacités techniques et de communication lors notamment des soutenances de fin de projet. <br><br>
-                  La formation que j'ai suivie met aussi l'accent sur la gestion et l'organisation de projets, ce qui m'a permis de travailler sur des projets variés, allant de l'installation de postes de travail sur des machines virtuelles à la création d'un Escape Game en passant par le déploiement d'un serveur web et la gestion de bases de données.
-                  En résumé, ma formation en BUT informatique m'a donné les compétences et l'expérience nécessaires pour réussir dans le monde professionnel de l'informatique.</p>
+                <p>Au cours de mon BUT Informatique, parcours administration systèmes & réseaux, j’ai acquis des compétences en gestion et déploiement d’infrastructures. J’ai travaillé sur des projets impliquant la virtualisation avec VirtualBox et Vagrant, l’automatisation avec Ansible et Terraform, ainsi que la gestion de services réseaux complexes (DNS, DHCP, LDAP, Proxy) sous Unix/Linux. 
+                  J’ai également utilisé Docker & Swarm pour conteneuriser des applications et mis en place des solutions de supervision comme SNMP, SmokePing, Cacti, etc. Mon expérience inclut aussi l’utilisation de GitLab et de la CI/CD pour l’intégration et le déploiement automatisé, ainsi que le scripting Bash et Python pour diverses automatisations et traitement de données. 
+                  Cette formation m’a aussi permis de développer des compétences humaines essentielles comme le travail en équipe, la communication claire et efficace, ainsi que la gestion du stress dans des environnements techniques exigeants.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" style="max-width: 85%;">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4"><span>2024</span></div>
+              <div class="service-about">
+                <h3>Stage - Déploiement d'une solution de supervision (Zabbix) sur un Docker Swarm</h3>
+                <h6 style="color: #D3D3D3;">Acteam-IT, 59100 Roubaix</h6>
+                <p>Pendant 10 semaines, j’ai travaillé au déploiement d’une solution de supervision complète avec Zabbix sur un cluster Docker Swarm applicatif, c'est à dire déployer une application qui permettra de surveiller l'état de santé des serveurs et des applications qui sont hébergés au sein de ceux-ci, cela permet notamment de pouvoir anticiper ou au pire des cas réagir rapidement afin d'éviter l'indisponibilité des services.  
+                  J’ai utilisé GitLab CI/CD pour l’automatisation du déploiement, ainsi que GoogleCloudPlateform pour l’hébergement. 
+                  Mon travail a également impliqué la configuration de PFsense pour la gestion du pare-feu, l’intégration de Grafana pour la visualisation des métriques et l’utilisation de Passbolt pour la gestion sécurisée des mots de passe. 
+                  J’ai également interagi avec Proxmox pour la gestion des machines virtuelles et utilisé OVH pour l’administration des noms de domaine des applicatifs. 
+                  Ce stage m’a permis d’approfondir mes compétences en scripting avec Bash et Python, tout en travaillant sur une infrastructure réelle en entreprise. 
+                  Au-delà des compétences techniques, cette expérience m’a appris l'importance du service aux autres, la bienveillance dans un cadre professionnel, la patience face aux problématiques complexes, ainsi que la capacité à expliquer clairement mes actions à des collègues et clients.</p>
               </div>
             </div>
           </div>
@@ -381,94 +396,100 @@
           <!-- Compétences -->
           <div class="row">
 
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('reseau')">
+              <img src="images/reseau_icon.svg" alt="reseau_icon" class="img-fluid skill-icon">
+              <p>Services réseaux complexes</p>
+              <div id="reseau" class="skill-description">Dans le cadre d'un projet universitaire visant à recréer une infrastructure d'entreprise complète, nous devions implémenter sur Debian divers services réseau tels que NFS, LDAP, PAM, serveur mail, DNS, DHCP et Proxy. J'ai participé à la configuration et à l'intégration de ces services pour assurer leur interopérabilité.</div>
+            </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('bash')">
               <img src="images/bash_icon.svg" alt="bash_icon" class="img-fluid skill-icon">
               <p>Bash</p>
-              <div id="bash" class="skill-description">Système de gestion de versions distribué.</div>
+              <div id="bash" class="skill-description">J'ai appris à écrire des scripts Bash pour automatiser des tâches et les rendre automatique avec l'outil cron.</div>
             </div>
 
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('git')">
               <img src="images/git_icon.svg" alt="git_icon" class="img-fluid skill-icon">
               <p>Git</p>
-              <div id="git" class="skill-description">Système de gestion de versions distribué.</div>
+              <div id="git" class="skill-description">Utilisé en permanance et partout, Git est essentiel pour le travail collaboratif à distance et pour le contrôle de version. Je l'utilise en projet universitaire comme en entreprise.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('unix')">
               <img src="images/unix_icon.svg" alt="unix_icon" class="img-fluid skill-icon">
               <p>Unix</p>
-              <div id="unix" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="unix" class="skill-description">L'université ayant des systèmes sur Debian, j'ai appris à administrer des systèmes Unix, notamment pour la configuration, la gestion des utilisateurs et plein d'autres.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('virtualbox')">
               <img src="images/vb_logo.svg" alt="virtual_icon" class="img-fluid skill-icon">
               <p>VirtualBox</p>
-              <div id="virtual" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="virtualbox" class="skill-description">J'ai appris à utiliser VirtualBox afin de créer des machines virtuelles.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('python')">
               <img src="images/python_icon.svg" alt="python_icon" class="img-fluid skill-icon">
               <p>Python</p>
-              <div id="python" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="python" class="skill-description">J'ai appris à développer des scripts d’automatisation de manipulation de machines virtuelles ainsi que le traitement des données (log) dans le cadre d'un projet universitaire.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('java')">
               <img src="images/java_icon.svg" alt="java_icon" class="img-fluid skill-icon">
               <p>Java</p>
-              <div id="java" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="java" class="skill-description">J'ai appris à développer en Java de nombreuses applications et jeux avec une interface graphique dans le cadre de projets universitaire.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('docker')">
               <img src="images/docker-svgrepo-com.svg" alt="docker_icon" class="img-fluid skill-icon">
               <p>Docker & Swarm</p>
-              <div id="docker" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="docker" class="skill-description">J'ai utilisé Docker lors de ma formation mais aussi lors de mon stage, j’ai conteneurisé une application Zabbix et orchestré son déploiement avec Docker Swarm, optimisant ainsi la scalabilité et la résilience du système.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('sql')">
               <img src="images/postgresql-icon.svg" alt="sql_icon" class="img-fluid skill-icon">
               <p>SQL</p>
-              <div id="postgresql" class="skill-description">Plateforme de conteneurisation.</div>
+              <div id="sql" class="skill-description">J'ai appris, à l'Université, à maniupuler les données des bases de données relationnel grâce au langage SQL et ses requêtes.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('ansible')">
               <img src="images/ansible_icon.svg" alt="ansible_icon" class="img-fluid skill-icon">
               <p>Ansible</p>
-              <div id="ansible" class="skill-description">Outil d'automatisation et de gestion de configuration.</div>
+              <div id="ansible" class="skill-description">J’ai utilisé Ansible pour automatiser le déploiement de serveurs web et bases de données dans un projet universitaire, réduisant ainsi les erreurs de configuration.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('terraform')">
               <img src="images/terraform_icon.svg" alt="terraform_icon" class="img-fluid skill-icon">
               <p>Terraform</p>
-              <div id="terraform" class="skill-description">Outil d'infrastructure as code.</div>
+              <div id="terraform" class="skill-description">J’ai utilisé Terraform pour la mise en place d’une infrastructure cloud sur Azure, dans le cadre d’un projet universitaire portant sur l’infrastructure as code.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('gcp')">
               <img src="images/gcp_icon.svg" alt="gcp_icon" class="img-fluid skill-icon">
               <p>Google Cloud</p>
-              <div id="gcp" class="skill-description">Plateforme cloud de Google.</div>
+              <div id="gcp" class="skill-description">J'ai utilisé GCP pour la configuration et l'administration des machines virtuelles ainsi que gestion des sauvegardes dans les buckets lors de mon stage en entreprise.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('azure')">
               <img src="images/azure_icon.svg" alt="azure_icon" class="img-fluid skill-icon">
               <p>Microsoft Azure</p>
-              <div id="azure" class="skill-description">Plateforme cloud de Microsoft.</div>
+              <div id="azure" class="skill-description">J'ai utilisé Azure afin d'implémentater une architecture cloud à l'Université ainsi que gestion des utilisateurs et de leur droits lors d'un stage en entreprise.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('vagrant')">
               <img src="images/vagrant_icon.svg" alt="vagrant_icon" class="img-fluid skill-icon">
               <p>Vagrant</p>
-              <div id="vagrant" class="skill-description">Gestion d'environnements virtualisés.</div>
+              <div id="vagrant" class="skill-description">J'ai utilisé Vagrant pour déployer et provisionner des machines virtuelles identiques à des fins de tests et développement durant les projets Universitaire.</div>
             </div>
             
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('gitlab')">
               <img src="images/gitlab_icon.svg" alt="gitlab_icon" class="img-fluid skill-icon">
               <p>GitLab & CI/CD</p>
-              <div id="gitlab" class="skill-description">Plateforme DevOps avec CI/CD intégré.</div>
+              <div id="gitlab" class="skill-description">J'utilise Gitlab pour mettre en place d’une pipeline CI/CD sur GitLab en stage, permettant des tests et déploiements automatisés.</div>
             </div>
     
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center skill" onclick="toggleDescription('cisco')">
               <img src="images/cisco_icon.svg" alt="cisco_icon" class="img-fluid skill-icon">
               <p>Cisco</p>
-              <div id="cisco" class="skill-description">Plateforme DevOps avec CI/CD intégré.</div>
+              <div id="cisco" class="skill-description">J'ai utilisé le matériel Cisco afin de mettre en place et configurer des routeurs incluant VLAN, routage dynamique et sécurité réseau dans le cadre d’un projet universitaire visant à recrée une infrastructure d'entreprise.</div>
             </div>
           </div>
         </div>
@@ -500,8 +521,6 @@
         }
       }
     </script>    
-
-<br><br><br>
 
         <div class="row">
           <div class="col-12 mb-5 position-relative">
